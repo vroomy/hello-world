@@ -1,0 +1,13 @@
+port = 8080
+# Uncomment these lines if you want to utilize https
+# tlsPort = 10443 
+# tlsDir = "./tls"
+
+plugins = [
+	"github.com/vroomy/hello-world/companies/plugin as companies",
+]
+
+include = [
+	"./routes/api.toml",
+	"./routes/companies.toml",
+]

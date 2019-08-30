@@ -1,0 +1,38 @@
+[[group]]
+name = "companies"
+group = "api"
+httpPath = "/companies"
+handlers = []
+
+[[route]]
+method = "POST"
+group = "companies"
+httpPath = "/"
+handlers = [
+	"companies.New",
+]
+
+[[route]]
+method = "GET"
+group = "companies"
+httpPath = "/:companyID"
+handlers = [
+	"companies.Get",
+]
+
+[[route]]
+method = "PUT"
+group = "companies"
+httpPath = "/:companies"
+handlers = [
+	"companies.Edit",
+]
+
+
+[[route]]
+method = "DELETE"
+group = "companies"
+httpPath = "/:companies"
+handlers = [
+	"companies.Delete",
+]
