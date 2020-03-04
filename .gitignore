@@ -1,3 +1,4 @@
 plugins/*.so
 data/*
 panics.log
+tls/
