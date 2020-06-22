@@ -2,3 +2,4 @@ plugins/*.so
 data/*
 panics.log
 tls/
+build/companies.so
