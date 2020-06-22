@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/Hatch1fy/httpserve"
+	"github.com/vroomy/common"
 	"github.com/vroomy/hello-world/companies"
-	"github.com/vroomy/plugins"
 )
 
 var c *companies.Companies
@@ -18,7 +18,7 @@ func Backend() interface{} {
 }
 
 // OnInit will be called by Vroomie on initialization
-func OnInit(p *plugins.Plugins, flags, env map[string]string) (err error) {
+func OnInit(p common.Plugins, flags, env map[string]string) (err error) {
 	// We currently don't need to initialize anything additional
 	return
 }
