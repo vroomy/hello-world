@@ -3,3 +3,4 @@ data/*
 panics.log
 tls/
 build/companies.so
+hello-world
