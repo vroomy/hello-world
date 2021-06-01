@@ -4,9 +4,18 @@ import (
 	"fmt"
 	"strconv"
 	"sync"
+
+	"github.com/vroomy/plugins"
 )
 
 const errCannotFindCompanyFmt = "cannot find company with ID \"%s\""
+
+func init() {
+	fmt.Println("We're here")
+	p.c = New()
+	plugins.Register("companies", &p)
+	fmt.Println("Registered!")
+}
 
 // New will return a new instance of companies
 func New() *Companies {

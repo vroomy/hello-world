@@ -1,8 +1,10 @@
 module github.com/vroomy/hello-world
 
-go 1.14
+go 1.15
 
 require (
-	github.com/Hatch1fy/httpserve v0.4.79
-	github.com/vroomy/common v0.1.0
+	github.com/hatchify/closer v0.4.81
+	github.com/vroomy/common v0.5.2
+	github.com/vroomy/plugins v0.6.0
+	github.com/vroomy/vroomy v0.10.1
 )
