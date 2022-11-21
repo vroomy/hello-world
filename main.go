@@ -7,7 +7,7 @@ import (
 	"github.com/hatchify/closer"
 	"github.com/vroomy/vroomy"
 
-	_ "github.com/vroomy/hello-world/companies"
+	_ "github.com/vroomy/hello-world/plugins/companies"
 )
 
 func main() {
