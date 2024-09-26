@@ -4,7 +4,6 @@ import (
 	"context"
 	"log"
 
-	"github.com/hatchify/closer"
 	"github.com/vroomy/vroomy"
 
 	_ "github.com/vroomy/hello-world/plugins/companies"
@@ -20,18 +19,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	c := closer.New()
-	ctx, cancel := context.WithCancel(context.Background())
-	go func() {
-		_ = c.Wait()
-		cancel()
-	}()
-
-	if err = svc.Listen(ctx); err != nil && err != context.Canceled {
-		log.Fatal(err)
-	}
-
-	if err = svc.Close(); err != nil {
+	if err = svc.ListenUntilSignal(context.Background()); err != nil {
 		log.Fatal(err)
 	}
 }
