@@ -18,7 +18,7 @@ require (
 	github.com/hatchify/cron v0.4.82 // indirect
 	github.com/hatchify/errors v0.4.82 // indirect
 	github.com/vroomy/httpserve v0.12.1 // indirect
-	golang.org/x/crypto v0.26.0 // indirect
-	golang.org/x/net v0.28.0 // indirect
-	golang.org/x/text v0.17.0 // indirect
+	golang.org/x/crypto v0.35.0 // indirect
+	golang.org/x/net v0.36.0 // indirect
+	golang.org/x/text v0.22.0 // indirect
 )
