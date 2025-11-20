@@ -1,6 +1,6 @@
 module github.com/vroomy/hello-world
 
-go 1.23.0
+go 1.24.0
 
 require (
 	github.com/vroomy/common v0.6.0
@@ -18,7 +18,7 @@ require (
 	github.com/hatchify/cron v0.4.82 // indirect
 	github.com/hatchify/errors v0.4.82 // indirect
 	github.com/vroomy/httpserve v0.12.1 // indirect
-	golang.org/x/crypto v0.26.0 // indirect
-	golang.org/x/net v0.28.0 // indirect
-	golang.org/x/text v0.17.0 // indirect
+	golang.org/x/crypto v0.45.0 // indirect
+	golang.org/x/net v0.47.0 // indirect
+	golang.org/x/text v0.31.0 // indirect
 )
